@@ -1,0 +1,144 @@
+{
+  "project_info": {
+    "title": "Clinic Appointment and Follow-Up Register",
+    "created": 1785086279.859,
+    "last_updated": 1785086632.384,
+    "total_slides": 12
+  },
+  "slides": [
+    {
+      "id": "title",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "problem",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "features",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "tech_stack",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "ml_model",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "database",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "demo_data",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "design",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "getting_started",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "metrics",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "roadmap",
+      "state": "edited",
+      "pageNum": 11
+    },
+    {
+      "id": "conclusion",
+      "state": "edited",
+      "pageNum": 12
+    }
+  ],
+  "outline": [
+    {
+      "id": "title",
+      "title": "Clinic Appointment and Follow-Up Register",
+      "summary": "Title slide introducing the intelligent appointment management system with ML-powered no-show prediction for healthcare clinics.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "problem",
+      "title": "Current Challenges",
+      "summary": "Overview of key problems in clinic management: high no-show rates, manual tracking, inefficient scheduling, and poor follow-up management.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "features",
+      "title": "Key Features",
+      "summary": "Five core features: Dashboard overview, Patient management, Appointment scheduling, Follow-up register, and ML-powered predictions.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "tech_stack",
+      "title": "Technology Stack",
+      "summary": "Modern architecture using React 19, Express.js, tRPC, MySQL, and scikit-learn with Scandinavian minimalist design.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "ml_model",
+      "title": "ML No-Show Prediction",
+      "summary": "Machine learning model predicting no-show risk based on day of week, lead time, prior history, and time of day.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "database",
+      "title": "Database Design",
+      "summary": "Comprehensive data model with five core tables: Patients, Doctors, Appointments, Follow-Ups, and Users.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "demo_data",
+      "title": "Demo Data & Results",
+      "summary": "Pre-populated environment with 5 doctors, 12 patients, 26 appointments, and follow-up records ready for demonstration.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "design",
+      "title": "Design & UX",
+      "summary": "Scandinavian minimalist aesthetic with pale cool grays, pastel accents, bold typography, and generous spacing.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "getting_started",
+      "title": "Getting Started",
+      "summary": "Quick setup guide with installation steps, database setup, and running the application in development and production modes.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "metrics",
+      "title": "Key Metrics & Impact",
+      "summary": "Measurable results including 15-20% no-show reduction, 30% scheduling efficiency gain, and improved staff productivity.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "roadmap",
+      "title": "Future Roadmap",
+      "summary": "Planned enhancements including SMS/Email reminders, advanced analytics, calendar integration, video consultations, and mobile apps.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "conclusion",
+      "title": "Conclusion",
+      "summary": "Summary of key takeaways and next steps for implementing the Clinic Appointment Register in your healthcare facility.",
+      "image_plan": "Use a suitable image if needed"
+    }
+  ]
+}

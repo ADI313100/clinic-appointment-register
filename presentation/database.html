@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Design</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #F0F9FF;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .header {
+            padding-top: 60px;
+            padding-left: 80px;
+            margin-bottom: 60px;
+        }
+        
+        .title {
+            font-size: 48px;
+            font-weight: 900;
+            color: #0F172A;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #64748B;
+            font-weight: 400;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 80px;
+            padding: 0 80px;
+        }
+        
+        .table-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .table-item {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding-top: 15px;
+            border-top: 1px solid #CBD5E1;
+        }
+        
+        .table-number {
+            font-size: 24px;
+            font-weight: 900;
+            color: #FB7185;
+            width: 40px;
+        }
+        
+        .table-info h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0F172A;
+            margin-bottom: 4px;
+        }
+        
+        .table-info p {
+            font-size: 14px;
+            color: #64748B;
+        }
+        
+        .features-box {
+            background: rgba(147, 197, 253, 0.1);
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        
+        .features-title {
+            font-size: 22px;
+            font-weight: 800;
+            color: #0F172A;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .feature-point {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .feature-point i {
+            color: #4285F4;
+            padding-top: 4px;
+        }
+        
+        .feature-point-text h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0F172A;
+            margin-bottom: 5px;
+        }
+        
+        .feature-point-text p {
+            font-size: 14px;
+            color: #64748B;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="title">Database Design</h1>
+            <p class="subtitle">Comprehensive data model for healthcare management</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="table-list">
+                <div class="table-item">
+                    <div class="table-number">01</div>
+                    <div class="table-info">
+                        <h3>Patients</h3>
+                        <p>Demographics, contact info, and medical history notes</p>
+                    </div>
+                </div>
+                <div class="table-item">
+                    <div class="table-number">02</div>
+                    <div class="table-info">
+                        <h3>Doctors</h3>
+                        <p>Profiles, specialties, and professional contact details</p>
+                    </div>
+                </div>
+                <div class="table-item">
+                    <div class="table-number">03</div>
+                    <div class="table-info">
+                        <h3>Appointments</h3>
+                        <p>Scheduling, status tracking, and ML risk scores</p>
+                    </div>
+                </div>
+                <div class="table-item">
+                    <div class="table-number">04</div>
+                    <div class="table-info">
+                        <h3>Follow-Ups</h3>
+                        <p>Post-appointment tracking and clinical notes</p>
+                    </div>
+                </div>
+                <div class="table-item">
+                    <div class="table-number">05</div>
+                    <div class="table-info">
+                        <h3>Users</h3>
+                        <p>Authentication, roles, and access control management</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features-box">
+                <h2 class="features-title">Core Architecture</h2>
+                <div class="feature-point">
+                    <i class="fas fa-link"></i>
+                    <div class="feature-point-text">
+                        <h4>Relational Integrity</h4>
+                        <p>Strict foreign key constraints ensure data consistency across all clinic operations.</p>
+                    </div>
+                </div>
+                <div class="feature-point">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="feature-point-text">
+                        <h4>Type-Safe Schema</h4>
+                        <p>Drizzle ORM provides end-to-end type safety from database to frontend.</p>
+                    </div>
+                </div>
+                <div class="feature-point">
+                    <i class="fas fa-history"></i>
+                    <div class="feature-point-text">
+                        <h4>Audit Trail</h4>
+                        <p>Automatic timestamping for every record creation and modification.</p>
+                    </div>
+                </div>
+                <div class="feature-point">
+                    <i class="fas fa-bolt"></i>
+                    <div class="feature-point-text">
+                        <h4>Optimized Queries</h4>
+                        <p>Indexed fields for fast searching of patients and appointment history.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

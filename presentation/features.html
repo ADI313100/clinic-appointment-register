@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Features</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #F0F9FF 0%, #E8F4F8 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .header {
+            padding-top: 60px;
+            padding-left: 80px;
+            margin-bottom: 40px;
+        }
+        
+        .title {
+            font-size: 48px;
+            font-weight: 900;
+            color: #0F172A;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #64748B;
+            font-weight: 400;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            padding: 0 80px;
+            margin-bottom: 40px;
+        }
+        
+        .feature {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 32px;
+            border-left: 4px solid #FB7185;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .feature-icon {
+            font-size: 32px;
+            color: #FB7185;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(251, 113, 133, 0.1);
+            border-radius: 8px;
+        }
+        
+        .feature-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0F172A;
+        }
+        
+        .feature-desc {
+            font-size: 14px;
+            color: #64748B;
+            line-height: 1.5;
+        }
+        
+        .features-grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 0 80px;
+            max-width: 700px;
+        }
+        
+        .feature-2 {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 32px;
+            border-left: 4px solid #93C5FD;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .feature-icon-2 {
+            font-size: 32px;
+            color: #93C5FD;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(147, 197, 253, 0.1);
+            border-radius: 8px;
+        }
+        
+        .feature-title-2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0F172A;
+        }
+        
+        .feature-desc-2 {
+            font-size: 14px;
+            color: #64748B;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="title">Key Features</h1>
+            <p class="subtitle">What we built for you</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="feature-title">Dashboard Overview</h3>
+                <p class="feature-desc">Real-time statistics, today's appointments, and pending follow-ups at a glance</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="feature-title">Patient Management</h3>
+                <p class="feature-desc">Comprehensive profiles with medical history and contact information</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3 class="feature-title">Appointment Scheduling</h3>
+                <p class="feature-desc">Easy scheduling with status tracking and ML-powered risk scoring</p>
+            </div>
+        </div>
+        
+        <div class="features-grid-2">
+            <div class="feature-2">
+                <div class="feature-icon-2">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <h3 class="feature-title-2">Follow-Up Register</h3>
+                <p class="feature-desc-2">Track pending, completed, and overdue follow-ups with detailed notes</p>
+            </div>
+            
+            <div class="feature-2">
+                <div class="feature-icon-2">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="feature-title-2">ML Predictions</h3>
+                <p class="feature-desc-2">Intelligent no-show risk scoring for proactive outreach</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; 
+        background: #F0F9FF; 
+        color: #334155;
+        font-family: 'Inter', sans-serif;
+        position: relative;
+        overflow: hidden;
+      }
+      .header {
+        padding-top: 60px;
+        padding-left: 80px;
+      }
+      .title {
+        font-size: 60px;
+        font-weight: 900;
+        color: #0F172A;
+        font-family: 'Syne', sans-serif;
+        letter-spacing: -1px;
+      }
+      .subtitle {
+        font-size: 24px;
+        color: #64748B;
+        margin-top: 10px;
+      }
+      /* Reduced top padding to lift content and avoid overflow */
+      .content-wrapper {
+        padding-top: 40px; /* was 60px */
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 0;
+      }
+      th {
+        background: #0F172A;
+        color: white;
+        text-align: left;
+        padding: 16px 24px; /* reduced vertical padding */
+        font-size: 22px;
+        font-weight: 600;
+      }
+      td {
+        padding: 18px 24px; /* reduced vertical padding */
+        border-bottom: 1px solid #E2E8F0;
+        font-size: 20px;
+        vertical-align: middle;
+      }
+      .layer-cell {
+        font-weight: 800;
+        color: #0F172A;
+        width: 300px;
+      }
+      .tech-cell {
+        color: #334155;
+      }
+      .icon {
+        margin-right: 15px;
+        color: #FB7185;
+        width: 24px;
+        text-align: center;
+      }
+      .design-note {
+        padding-top: 20px; /* was 40px, reduced */
+        font-size: 18px;
+        color: #64748B;
+        font-style: italic;
+      }
+      .accent-circle {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background: #FB7185;
+        opacity: 0.05;
+        border-radius: 50%;
+        bottom: -200px;
+        right: -100px;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="title">Technology Stack</h1>
+            <p class="subtitle">Modern, Scalable Architecture</p>
+        </div>
+        
+        <div class="content-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Layer</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="layer-cell"><i class="fas fa-laptop-code icon"></i>Frontend</td>
+                        <td class="tech-cell">React 19, TypeScript, Tailwind CSS 4, shadcn/ui</td>
+                    </tr>
+                    <tr>
+                        <td class="layer-cell"><i class="fas fa-server icon"></i>Backend</td>
+                        <td class="tech-cell">Express.js, tRPC, Drizzle ORM</td>
+                    </tr>
+                    <tr>
+                        <td class="layer-cell"><i class="fas fa-database icon"></i>Database</td>
+                        <td class="tech-cell">MySQL with optimized schema</td>
+                    </tr>
+                    <tr>
+                        <td class="layer-cell"><i class="fas fa-brain icon"></i>ML / AI</td>
+                        <td class="tech-cell">scikit-learn, Python</td>
+                    </tr>
+                    <tr>
+                        <td class="layer-cell"><i class="fas fa-shield-alt icon"></i>Auth</td>
+                        <td class="tech-cell">Manus OAuth Integration</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p class="design-note">
+                <strong>Design Philosophy:</strong> Scandinavian minimalist aesthetic with a focus on legibility, generous negative space, and high-contrast typography.
+            </p>
+        </div>
+        
+        <div class="accent-circle"></div>
+    </div>
+</body>
+</html>

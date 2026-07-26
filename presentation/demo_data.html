@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Data & Results</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #F0F9FF 0%, #E8F4F8 100%);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .header {
+            padding-top: 60px;
+            padding-left: 80px;
+            margin-bottom: 60px;
+        }
+        
+        .title {
+            font-size: 48px;
+            font-weight: 900;
+            color: #0F172A;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #64748B;
+            font-weight: 400;
+        }
+        
+        .main-content {
+            display: flex;
+            padding: 0 80px;
+            gap: 60px;
+        }
+        
+        .stats-grid {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+        
+        .stat-box {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 30px;
+            border-top: 4px solid #93C5FD;
+        }
+        
+        .stat-value {
+            font-size: 42px;
+            font-weight: 900;
+            color: #0F172A;
+            margin-bottom: 4px;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #64748B;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .coverage-list {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.4);
+            padding: 40px;
+            border-left: 2px solid rgba(15, 23, 42, 0.1);
+        }
+        
+        .coverage-list h3 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #0F172A;
+            margin-bottom: 24px;
+        }
+        
+        .coverage-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .coverage-item i {
+            color: #FB7185;
+            margin-top: 4px;
+        }
+        
+        .coverage-text {
+            font-size: 16px;
+            color: #334155;
+            line-height: 1.4;
+        }
+        
+        .footer-callout {
+            margin-top: auto;
+            padding: 40px 80px;
+            background: #0F172A;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .callout-text {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .callout-sub {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="title">Demo Data & Results</h1>
+            <p class="subtitle">A pre-populated environment for immediate evaluation</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">Doctors</div>
+                </div>
+                <div class="stat-box" style="border-color: #FB7185;">
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">Patients</div>
+                </div>
+                <div class="stat-box" style="border-color: #FB7185;">
+                    <div class="stat-value">26</div>
+                    <div class="stat-label">Appointments</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value">20+</div>
+                    <div class="stat-label">Follow-ups</div>
+                </div>
+            </div>
+            
+            <div class="coverage-list">
+                <h3>Comprehensive Coverage</h3>
+                <div class="coverage-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div class="coverage-text"><strong>Full Status Spectrum</strong>: Includes scheduled, completed, cancelled, and no-show appointments.</div>
+                </div>
+                <div class="coverage-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div class="coverage-text"><strong>ML Scenarios</strong>: Data points specifically designed to demonstrate risk scoring logic.</div>
+                </div>
+                <div class="coverage-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div class="coverage-text"><strong>Timeline View</strong>: 3 months of historical and future data for trend analysis.</div>
+                </div>
+                <div class="coverage-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div class="coverage-text"><strong>Specialties</strong>: Covers GP, Cardiology, Dermatology, Orthopedics, and Pediatrics.</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-callout">
+            <div>
+                <div class="callout-text">Ready for Demonstration</div>
+                <div class="callout-sub">No additional setup required - just sign in and explore the features.</div>
+            </div>
+            <i class="fas fa-rocket fa-2x"></i>
+        </div>
+    </div>
+</body>
+</html>

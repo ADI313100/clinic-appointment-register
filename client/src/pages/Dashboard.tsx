@@ -41,10 +41,10 @@ export default function Dashboard() {
         <div className="flex items-start justify-between">
           <div>
             <p className="text-sm font-medium text-gray-500 mb-1">{title}</p>
-            <p className="text-3xl font-bold text-gray-900">
+            <div className="text-3xl font-bold text-gray-900">
               {value}
               {unit && <span className="text-lg text-gray-500 ml-1">{unit}</span>}
-            </p>
+            </div>
           </div>
           <div className="p-3 bg-blue-50 rounded-lg">
             <Icon className="w-6 h-6 text-blue-600" />

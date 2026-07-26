@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Challenges</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #F0F9FF 0%, #E8F4F8 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .header {
+            padding-top: 60px;
+            padding-left: 80px;
+            margin-bottom: 40px;
+        }
+        
+        .title {
+            font-size: 48px;
+            font-weight: 900;
+            color: #0F172A;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #64748B;
+            font-weight: 400;
+        }
+        
+        .challenges {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 0 80px;
+            margin-bottom: 60px;
+        }
+        
+        .challenge {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .challenge-icon {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            background: rgba(147, 197, 253, 0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: #0F172A;
+        }
+        
+        .challenge-content h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0F172A;
+            margin-bottom: 8px;
+        }
+        
+        .challenge-content p {
+            font-size: 14px;
+            color: #64748B;
+            line-height: 1.5;
+        }
+        
+        .solution {
+            padding: 0 80px;
+            padding-top: 20px;
+            border-top: 2px solid rgba(15, 23, 42, 0.1);
+            font-size: 18px;
+            color: #0F172A;
+            font-weight: 600;
+        }
+        
+        .solution-text {
+            color: #64748B;
+            font-weight: 400;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="title">Current Challenges</h1>
+            <p class="subtitle">Problems in clinic management today</p>
+        </div>
+        
+        <div class="challenges">
+            <div class="challenge">
+                <div class="challenge-icon">
+                    <i class="fas fa-user-slash"></i>
+                </div>
+                <div class="challenge-content">
+                    <h3>High No-Show Rates</h3>
+                    <p>Clinics lose 20-30% of appointment slots to no-shows, impacting revenue and resource planning</p>
+                </div>
+            </div>
+            
+            <div class="challenge">
+                <div class="challenge-icon">
+                    <i class="fas fa-folder"></i>
+                </div>
+                <div class="challenge-content">
+                    <h3>Manual Tracking</h3>
+                    <p>Patient records and follow-ups are scattered across multiple systems and spreadsheets</p>
+                </div>
+            </div>
+            
+            <div class="challenge">
+                <div class="challenge-icon">
+                    <i class="fas fa-calendar-times"></i>
+                </div>
+                <div class="challenge-content">
+                    <h3>Inefficient Scheduling</h3>
+                    <p>No predictive insights for high-risk appointments or intelligent scheduling optimization</p>
+                </div>
+            </div>
+            
+            <div class="challenge">
+                <div class="challenge-icon">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <div class="challenge-content">
+                    <h3>Poor Follow-Up Management</h3>
+                    <p>Difficult to track pending and overdue follow-ups, leading to missed care opportunities</p>
+                </div>
+            </div>
+            
+            <div class="challenge">
+                <div class="challenge-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="challenge-content">
+                    <h3>Limited Visibility</h3>
+                    <p>Staff lack real-time dashboard insights into clinic operations and key metrics</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="solution">
+            ✓ Solution: An integrated platform with intelligent prediction and comprehensive management tools
+            <div class="solution-text">Reduce no-shows, improve efficiency, and deliver better patient care</div>
+        </div>
+    </div>
+</body>
+</html>
