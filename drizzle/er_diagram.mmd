@@ -1,0 +1,60 @@
+erDiagram
+    USERS ||--o{ PATIENTS : "has"
+    PATIENTS ||--o{ APPOINTMENTS : "has"
+    DOCTORS ||--o{ APPOINTMENTS : "attends"
+    APPOINTMENTS ||--o{ FOLLOWUPS : "requires"
+
+    USERS {
+        int id PK
+        varchar openId
+        text name
+        varchar email
+        varchar loginMethod
+        enum role
+        timestamp createdAt
+        timestamp updatedAt
+        timestamp lastSignedIn
+    }
+
+    PATIENTS {
+        int id PK
+        varchar name
+        varchar contactNumber
+        varchar email
+        date dateOfBirth
+        text medicalHistoryNotes
+        timestamp createdAt
+        timestamp updatedAt
+    }
+
+    DOCTORS {
+        int id PK
+        varchar name
+        varchar specialty
+        varchar contactNumber
+        varchar email
+        timestamp createdAt
+        timestamp updatedAt
+    }
+
+    APPOINTMENTS {
+        int id PK
+        int patientId FK
+        int doctorId FK
+        timestamp appointmentDateTime
+        text reason
+        enum status
+        int noShowRiskScore
+        timestamp createdAt
+        timestamp updatedAt
+    }
+
+    FOLLOWUPS {
+        int id PK
+        int appointmentId FK
+        date followUpDate
+        enum status
+        text notes
+        timestamp createdAt
+        timestamp updatedAt
+    }

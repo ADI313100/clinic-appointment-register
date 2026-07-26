@@ -1,0 +1,55 @@
+direction: right
+
+User: {shape: record}
+User.id: int {pk}
+User.openId: varchar
+User.name: text
+User.email: varchar
+User.loginMethod: varchar
+User.role: enum
+User.createdAt: timestamp
+User.updatedAt: timestamp
+User.lastSignedIn: timestamp
+
+Patient: {shape: record}
+Patient.id: int {pk}
+Patient.name: varchar
+Patient.contactNumber: varchar
+Patient.email: varchar
+Patient.dateOfBirth: date
+Patient.medicalHistoryNotes: text
+Patient.createdAt: timestamp
+Patient.updatedAt: timestamp
+
+Doctor: {shape: record}
+Doctor.id: int {pk}
+Doctor.name: varchar
+Doctor.specialty: varchar
+Doctor.contactNumber: varchar
+Doctor.email: varchar
+Doctor.createdAt: timestamp
+Doctor.updatedAt: timestamp
+
+Appointment: {shape: record}
+Appointment.id: int {pk}
+Appointment.patientId: int {fk}
+Appointment.doctorId: int {fk}
+Appointment.appointmentDateTime: timestamp
+Appointment.reason: text
+Appointment.status: enum
+Appointment.noShowRiskScore: int
+Appointment.createdAt: timestamp
+Appointment.updatedAt: timestamp
+
+FollowUp: {shape: record}
+FollowUp.id: int {pk}
+FollowUp.appointmentId: int {fk}
+FollowUp.followUpDate: date
+FollowUp.status: enum
+FollowUp.notes: text
+FollowUp.createdAt: timestamp
+FollowUp.updatedAt: timestamp
+
+Appointment.patientId -> Patient.id
+Appointment.doctorId -> Doctor.id
+FollowUp.appointmentId -> Appointment.id
