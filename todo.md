@@ -81,3 +81,9 @@
 ## Phase 10: Bug Fixes & Refinement
 - [x] Fix React hydration error on Dashboard (nested div in p tag)
 - [x] Audit all pages for similar HTML nesting issues
+
+## Phase 11: Database Optimization & Analysis
+- [x] Write and run grouped count query showing appointment status distribution
+- [x] Add composite index on (status, appointmentDateTime) for query optimization
+- [x] Show EXPLAIN query plan before and after index creation
+- [x] Document performance improvements and recommendations
